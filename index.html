@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO lista</title>
+    <link rel="stylesheet" hfref="./style/selectors.css">
+</head>
+
+<body>
+    <h1>TODO lista</h1>
+    <div id="todo-div">
+        <table>
+            <thead>
+                <tr>
+                    <th>elvégezve</th>
+                    <th>feladat</th>
+                    <th>idő</th>
+                    <th>nehézség</th>
+                </tr>
+            </thead>
+            <tbody id="todo-tbody"></tbody>
+        </table>
+    </div>
+    <p>Új tevékenység hozzáadása:</p>
+    <p><input type="text" id="newActivity" placeholder="tevékenység">
+        <input type="number" id="newDuration" style="width:40px" min="0" placeholder="perc">
+        <input type="number" id="newDifficulty" style="width:80px" min="0" max="10" placeholder="nehézség">
+        <button type="button" id="newActivityButton">mehet</button>
+    </p>
+    <p>Teljes időtartam: <span id="total"></span></p>
+    <p>Hátralévő idő: <span id="rest"></span></p>
+    <p>Rendezés sorrendje nehézség szerint:
+        <button type="button" id="decrease">csökkenő</button>
+        <button type="button" id="increase">növekvő</button>
+    </p>
+
+    <script src="./js/index.js" type="module"></script>
+</body>
+
+</html>
