@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TODO lista</title>
-    <link rel="stylesheet" hfref="./style/selectors.css">
+    <link rel="stylesheet" href="./style/selectors.css">
 </head>
 
 <body>
@@ -16,9 +16,11 @@
             <thead>
                 <tr>
                     <th>elvégezve</th>
+                    <th>nr</th>
                     <th>feladat</th>
                     <th>idő</th>
                     <th>nehézség</th>
+                    <th>törlés</th>
                 </tr>
             </thead>
             <tbody id="todo-tbody"></tbody>
@@ -32,6 +34,7 @@
     </p>
     <p>Teljes időtartam: <span id="total"></span></p>
     <p>Hátralévő idő: <span id="rest"></span></p>
+    <p>Teljesítve: <span id="progress"></span></p>
     <p>Rendezés sorrendje nehézség szerint:
         <button type="button" id="decrease">csökkenő</button>
         <button type="button" id="increase">növekvő</button>

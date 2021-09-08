@@ -12,3 +12,6 @@ export const calcRestTime = function (duration, isDone, myActivities) {
     const restTime = restTimeArray.reduce((acc, value) => acc + value, 0)
     return restTime;
 }
+
+export const calcProgress = isDone =>
+    (isDone.filter(value=>value).length/isDone.length*100).toFixed(1)
